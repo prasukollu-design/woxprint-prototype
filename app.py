@@ -185,7 +185,7 @@ elif page == "Station In-Charge":
     st.title("Station Dashboard")
     
     pwd = st.text_input("Admin Password", type="password")
-    
+    st.caption("🔑 Prototype Access: Password is **admin123**")
     if pwd == "admin123":
         try:
             conn = sqlite3.connect(DB_NAME)
